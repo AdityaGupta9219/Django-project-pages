@@ -2,13 +2,13 @@
     "version": 2,
     "builds": [
       { "src": "manage.py", "use": "@vercel/python", "config": { "pythonVersion": "3.9" } },
-      { "src": "your_app_directory", "use": "@vercel/python", "config": { "pythonVersion": "3.9" } }
+      { "src": "portfolio", "use": "@vercel/python", "config": { "pythonVersion": "3.9" } }
     ],
     "routes": [
       { "src": "/(.*)", "dest": "manage.py" }
     ],
     "env": {
-      "DJANGO_SETTINGS_MODULE": "your_project.settings"
+      "DJANGO_SETTINGS_MODULE": "aditya.settings"
     }
   }
   
